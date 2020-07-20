@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
+import { BrowserRouter as Router, Link } from 'react-router-dom'
 import propTypes from 'prop-types'
 
 export default function Button(props) {
@@ -29,7 +29,7 @@ export default function Button(props) {
         </span>
     }
 
-    if (props.type == "linkk") {
+    if (props.type == "link") {
         if (props.isExternal) {
             return (
                 <a
@@ -73,5 +73,5 @@ Button.propTypes = {
     isLarge: propTypes.bool,
     isBlock: propTypes.bool,
     hasShadow: propTypes.bool,
-    isExternal: propTypes.boolm
+    isExternal: propTypes.bool
 }
